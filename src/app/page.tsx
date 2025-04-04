@@ -1,5 +1,5 @@
 import styles from './page.module.css'
-import { client } from '../libs/client'
+import { client } from '../libs/microcms/client'
 
 export default async function Home() {
   const data = await client.get({ endpoint: 'blog' })
